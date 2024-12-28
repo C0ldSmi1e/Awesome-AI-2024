@@ -42,60 +42,67 @@
     "url": "https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/"
   },
   {
-    "date": "2024-03-04",
-    "title": "Claude 3 Family Release",
+    "date": "2024-11-25",
+    "title": "Model Context Protocol",
     "category": "model",
-    "description": "Anthropic announces the Claude 3 model family, setting new industry benchmarks across a wide range of cognitive tasks, including Haiku, Sonnet, and Opus variants.",
-    "url": "https://www.anthropic.com/news/claude-3-family"
+    "description": "Anthropic introduces a protocol focusing on advanced context usage for large language models, improving conversational depth and safety measures.",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
   },
   {
-    "date": "2024-10-22",
-    "title": "Claude 3.5 Haiku and Sonnet Release",
+    "date": "2024-07-20",
+    "title": "Claude 3.5 Sonnet",
     "category": "model",
-    "description": "Anthropic releases Claude 3.5 Haiku, its fastest model yet, and an improved version of Claude 3.5 Sonnet, along with a new computer use feature for Sonnet.",
-    "url": "https://www.inc.com/ben-sherry/anthropic-just-released-its-most-advanced-small-ai-model-yet/90992933"
+    "description": "Anthropic showcases the poetic capacity of Claude 3.5 with a sonnet, reflecting the model's capability in structured creative expression.",
+    "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
   },
   {
-    "date": "2024-01-25",
-    "title": "AI-Powered Cancer Detection System",
+    "date": "2024-05-13",
+    "title": "Claude 3 Haiku",
+    "category": "model",
+    "description": "Anthropic unveils a sample haiku crafted by Claude 3, demonstrating the model’s succinct and elegant language generation abilities.",
+    "url": "https://www.anthropic.com/news/claude-3-haiku"
+  },
+  {
+    "date": "2024-05-13",
+    "title": "Meta Llama 3.1 Release",
+    "category": "model",
+    "description": "Meta unveils Llama 3.1, highlighting performance boosts and refined language understanding capabilities in this incremental update to the Llama series.",
+    "url": "https://ai.meta.com/blog/meta-llama-3-1/"
+  },
+  {
+    "date": "2024-05-13",
+    "title": "Llama 3.2 Release",
+    "category": "model",
+    "description": "Meta showcases Llama 3.2, emphasizing enhanced vision capabilities and optimized performance for edge and mobile applications.",
+    "url": "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/"
+  },
+  {
+    "date": "2024-08-19",
+    "title": "What can an 8-year-old build with AI?",
     "category": "application",
-    "description": "FDA approves an AI system for early-stage cancer detection, showing significantly higher accuracy rates than traditional methods.",
-    "url": "https://www.fda.gov/medical-devices"
+    "description": "A 8-year-old girl, daughter of Ricky Robinette, builds a full-stack website with Cursor in 45 minutes.",
+    "url": "https://x.com/rickyrobinett/status/1825581674870055189"
   },
   {
-    "date": "2024-03-20",
-    "title": "AI Traffic Management System",
+    "date": "2024-05-12",
+    "title": "Devin",
     "category": "application",
-    "description": "Singapore implements citywide AI traffic management system, reducing congestion by 30% in pilot areas.",
-    "url": "https://www.smartnation.gov.sg/"
+    "description": "Setting a new state of the art on the SWE-bench coding benchmark. Meet Devin, the world’s first fully autonomous AI software engineer.",
+    "url": "https://www.cognition.ai/blog/introducing-devin"
   },
   {
-    "date": "2024-04-10",
-    "title": "AI-Enhanced Weather Forecasting",
+    "date": "2024-12-18",
+    "title": "Github Copilot Free in VSCode",
     "category": "application",
-    "description": "NOAA deploys new AI-powered weather prediction system, improving forecast accuracy by up to 40% for extreme weather events.",
-    "url": "https://www.noaa.gov/"
+    "description": "Copilot Free gives you the choice between Anthropic's Claude 3.5 Sonnet or OpenAI's GPT-4o model.",
+    "url": "https://github.blog/news-insights/product-news/github-copilot-in-vscode-free/"
   },
   {
-    "date": "2024-02-28",
-    "title": "Constitutional AI Framework",
-    "category": "research",
-    "description": "Researchers publish comprehensive framework for implementing ethical constraints in large language models, introducing new methods for value alignment.",
-    "url": "https://arxiv.org/abs/example"
-  },
-  {
-    "date": "2024-04-15",
-    "title": "Neural Architecture Evolution",
-    "category": "research",
-    "description": "Breakthrough paper demonstrates self-evolving neural networks that can automatically optimize their architecture for specific tasks.",
-    "url": "https://arxiv.org/abs/example"
-  },
-  {
-    "date": "2024-05-20",
-    "title": "Quantum-Classical AI Integration",
-    "category": "research",
-    "description": "Research team achieves first successful integration of quantum computing with classical AI models, showing significant speed improvements for specific tasks.",
-    "url": "https://nature.com/example"
+    "date": "2024-06-10",
+    "title": "Apple Intelligence",
+    "category": "system",
+    "description": "Apple's new AI system, Apple Intelligence, is announced at WWDC 2024.",
+    "url": "https://www.apple.com/apple-intelligence/"
   },
   {
     "date": "2024-09-09",
@@ -119,31 +126,24 @@
     "url": "https://www.whitehouse.gov/briefing-room/statements-releases/2024/10/30/fact-sheet-key-ai-accomplishments-in-the-year-since-the-biden-harris-administrations-landmark-executive-order/"
   },
   {
-    "date": "2024-02-01",
-    "title": "Major Tech Company Layoffs",
-    "category": "news",
-    "description": "Several major tech companies announce significant layoffs despite AI boom, raising questions about industry direction.",
-    "url": "https://example.com/tech-layoffs"
-  },
-  {
-    "date": "2024-04-02",
-    "title": "AI Alliance Formation",
-    "category": "news",
-    "description": "Leading tech companies form alliance to establish standards for responsible AI development and deployment.",
-    "url": "https://example.com/ai-alliance"
-  },
-  {
-    "date": "2024-05-15",
-    "title": "AI Copyright Lawsuit",
-    "category": "news",
-    "description": "Landmark copyright lawsuit filed against AI companies over training data usage, setting potential precedent for industry.",
-    "url": "https://example.com/ai-lawsuit"
-  },
-  {
     "date": "2024-12-10",
     "title": "NeurIPS 2024",
     "category": "event",
     "description": "Annual Conference on Neural Information Processing Systems, featuring breakthrough research in machine learning and artificial intelligence.",
     "url": "https://neurips.cc/"
+  },
+  {
+    "date": "2024-02-15",
+    "title": "Gemini 1.5",
+    "category": "model",
+    "description": "The model delivers dramatically enhanced performance, with a breakthrough in long-context understanding across modalities.",
+    "url": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/"
+  },
+  {
+    "date": "2024-12-11",
+    "title": "Gemini 2.0",
+    "category": "model",
+    "description": "Google's new AI model for the agentic era",
+    "url": "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/"
   }
 ]
