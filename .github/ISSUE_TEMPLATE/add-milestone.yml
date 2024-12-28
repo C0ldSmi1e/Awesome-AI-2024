@@ -38,7 +38,6 @@ body:
         - event (Conferences & Events)
         - policy (Regulations & Policies)
         - research (Research Breakthroughs)
-        - corporate (Corporate News)
         - other (specify in description)
       default: 0
     validations:
