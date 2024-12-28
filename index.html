@@ -21,7 +21,16 @@
             <p class="text-gray-400 mt-4 text-lg">
                 🚀 An awesome collection of groundbreaking AI milestones, innovations, and breakthroughs in 2024!
                 <span class="block text-sm mt-2">
-                    Star ⭐️ to support this project if you find it cool!
+                    Star ⭐️ or contribute to 
+                    <a
+                        class="text-blue-400 hover:text-blue-600"
+                        href="https://github.com/C0ldSmi1e/awesome-ai-2024" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        this project
+                    </a>
+                    !
                 </span>
             </p>
             
@@ -43,7 +52,7 @@
         <!-- Footer -->
         <footer class="mt-20 pb-8 text-center">
             <div class="flex items-center justify-center gap-8">
-                <a href="https://github.com/yourusername/awesome-ai-2024" 
+                <a href="https://github.com/C0ldSmi1e/awesome-ai-2024" 
                    target="_blank"
                    rel="noopener noreferrer"
                    class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
@@ -132,14 +141,16 @@
             const container = document.getElementById('timeline-events');
             container.innerHTML = '';
 
-            // Group events by month
+            // Group events by month - Modified to use string manipulation
             const eventsByMonth = events.reduce((groups, event) => {
-                const date = new Date(event.date);
-                const monthKey = `${date.getFullYear()}-${date.getMonth()}`;
+                // Extract year and month from the date string directly
+                const [year, month] = event.date.split('-');
+                const monthKey = `${year}-${month}`;
                 if (!groups[monthKey]) {
                     groups[monthKey] = {
-                        month: date.toLocaleString('en-US', { month: 'long' }),
-                        year: date.getFullYear(),
+                        // Use a date array to get month name without timezone conversion
+                        month: new Date(Date.UTC(year, month - 1)).toLocaleString('en-US', { month: 'long' }),
+                        year: year,
                         events: []
                     };
                 }
@@ -184,12 +195,15 @@
             div.className = `relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`;
             div.setAttribute('data-category', event.category);
 
-            const dateObj = new Date(event.date);
-            const formattedDate = dateObj.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
+            // Format date without timezone conversion
+            const [year, month, day] = event.date.split('-');
+            const formattedDate = new Date(Date.UTC(year, month - 1, day))
+                .toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    timeZone: 'UTC' // Force UTC to avoid timezone conversion
+                });
 
             const [gradientClass, baseColor] = categoryColors[event.category] || ['from-gray-400 to-gray-600', 'gray'];
 
