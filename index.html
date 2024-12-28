@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome AI 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen">
+    <div class="max-w-4xl mx-auto p-6">
+        <header class="text-center mb-16 mt-8">
+            <div class="inline-block">
+                <h1 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 font-space-grotesk">
+                    Awesome AI 2024
+                </h1>
+                <div class="h-1 w-full bg-gradient-to-r from-blue-400 to-purple-600 rounded-full"></div>
+            </div>
+            <p class="text-gray-400 mt-4 text-lg">
+                🚀 An awesome collection of groundbreaking AI milestones, innovations, and breakthroughs in 2024!
+                <span class="block text-sm mt-2">
+                    Star ⭐️ to support this project if you find it cool!
+                </span>
+            </p>
+            
+            <!-- Category Filter -->
+            <div class="flex flex-wrap justify-center gap-3 mt-12" id="category-filters">
+                <!-- Filters will be dynamically inserted here -->
+            </div>
+        </header>
+
+        <!-- Timeline Container -->
+        <div class="relative" id="timeline-container">
+            <!-- Timeline line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-400 to-purple-600"></div>
+            
+            <!-- Timeline events will be inserted here -->
+            <div id="timeline-events" class="relative space-y-12"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-20 pb-8 text-center">
+            <div class="flex items-center justify-center gap-8">
+                <a href="https://github.com/yourusername/awesome-ai-2024" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="font-medium">Source Code</span>
+                </a>
+
+                <a href="https://vercel.com" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group">
+                    <span class="font-medium">Deployed by</span>
+                    <svg class="h-4" fill="currentColor" viewBox="0 0 284 65">
+                        <path d="M141.68 16.25c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm117.14-14.5c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm-39.03 3.5c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9v-46h9zM37.59.25l36.95 64H.64l36.95-64zm92.38 5l-27.71 48-27.71-48h10.39l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10v14.8h-9v-34h9v9.2c0-5.08 5.91-9.2 13.2-9.2z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-4 text-gray-500 text-sm">
+                Made with ❤️ by the AI Lovers
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Color palette for categories
+        const colorPalette = [
+            ['from-blue-400 to-blue-600', 'blue'],
+            ['from-green-400 to-green-600', 'green'],
+            ['from-purple-400 to-purple-600', 'purple'],
+            ['from-yellow-400 to-yellow-600', 'yellow'],
+            ['from-red-400 to-red-600', 'red'],
+            ['from-pink-400 to-pink-600', 'pink'],
+            ['from-indigo-400 to-indigo-600', 'indigo'],
+            ['from-orange-400 to-orange-600', 'orange'],
+            ['from-teal-400 to-teal-600', 'teal'],
+            ['from-cyan-400 to-cyan-600', 'cyan']
+        ];
+
+        let categoryColors = {};
+
+        async function loadTimeline() {
+            try {
+                // Using the correct path to timeline.json
+                const response = await fetch('./timeline.json');
+                const data = await response.json();
+                
+                // Get unique categories and assign colors
+                const categories = ['all', ...new Set(data.map(item => item.category))];
+                assignCategoryColors(categories);
+                
+                // Create category filters
+                createCategoryFilters(categories);
+                
+                // Sort by date
+                const sorted = data.sort((a, b) => new Date(a.date) - new Date(b.date));
+                
+                // Render timeline
+                renderTimeline(sorted);
+                setupFilters();
+            } catch (error) {
+                console.error('Error loading timeline:', error);
+            }
+        }
+
+        function assignCategoryColors(categories) {
+            categories.forEach((category, index) => {
+                if (category === 'all') return;
+                const colorIndex = (index - 1) % colorPalette.length;
+                categoryColors[category] = colorPalette[colorIndex];
+            });
+        }
+
+        function createCategoryFilters(categories) {
+            const filterContainer = document.getElementById('category-filters');
+            filterContainer.innerHTML = categories.map((category, index) => `
+                <button class="filter-btn ${index === 0 ? 'active glow' : ''}" 
+                        data-category="${category}">
+                    ${category.charAt(0).toUpperCase() + category.slice(1)}
+                </button>
+            `).join('');
+        }
+
+        function renderTimeline(events) {
+            const container = document.getElementById('timeline-events');
+            container.innerHTML = '';
+
+            // Group events by month
+            const eventsByMonth = events.reduce((groups, event) => {
+                const date = new Date(event.date);
+                const monthKey = `${date.getFullYear()}-${date.getMonth()}`;
+                if (!groups[monthKey]) {
+                    groups[monthKey] = {
+                        month: date.toLocaleString('en-US', { month: 'long' }),
+                        year: date.getFullYear(),
+                        events: []
+                    };
+                }
+                groups[monthKey].events.push(event);
+                return groups;
+            }, {});
+
+            // Create timeline elements for each month
+            Object.values(eventsByMonth).forEach((monthGroup, monthIndex) => {
+                // Add month marker
+                const monthMarker = document.createElement('div');
+                monthMarker.className = 'relative w-full my-12 first:mt-0 month-marker';
+                monthMarker.innerHTML = `
+                    <div class="absolute w-full flex items-center justify-center">
+                        <div class="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 
+                                  backdrop-blur-sm border border-gray-700 shadow-lg">
+                            <div class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r 
+                                      from-blue-400 to-purple-400 flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400"></span>
+                                ${monthGroup.month} ${monthGroup.year}
+                                <span class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-12"></div>
+                `;
+                container.appendChild(monthMarker);
+
+                // Add events for this month
+                monthGroup.events
+                    .sort((a, b) => new Date(a.date) - new Date(b.date))
+                    .forEach((event, index) => {
+                        const idx = (monthIndex + index) % 2;
+                        const eventElement = createEventElement(event, idx);
+                        container.appendChild(eventElement);
+                    });
+            });
+        }
+
+        function createEventElement(event, index) {
+            const div = document.createElement('div');
+            div.className = `relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`;
+            div.setAttribute('data-category', event.category);
+
+            const dateObj = new Date(event.date);
+            const formattedDate = dateObj.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            const [gradientClass, baseColor] = categoryColors[event.category] || ['from-gray-400 to-gray-600', 'gray'];
+
+            div.innerHTML = `
+                <div class="absolute left-1/2 transform -translate-x-1/2">
+                    <div class="w-4 h-4 rounded-full border-4 border-gray-900 bg-gradient-to-r ${gradientClass} glow-${baseColor}"></div>
+                </div>
+                <div class="w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}">
+                    <div class="p-6 rounded-lg glass-card hover:scale-105 transition-all duration-300 group">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-sm font-medium text-gray-400">${formattedDate}</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="inline-block px-3 py-1 text-xs rounded-full bg-gradient-to-r ${gradientClass} text-white font-medium">
+                                ${event.category}
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">
+                            ${event.url ? `
+                            <a href="${event.url}" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="text-white hover:text-blue-400 transition-colors flex items-center gap-2">
+                                ${event.title}
+                                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" 
+                                     fill="none" 
+                                     stroke="currentColor" 
+                                     viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" 
+                                          stroke-linejoin="round" 
+                                          stroke-width="2" 
+                                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                            ` : `<span class="text-white">${event.title}</span>`}
+                        </h3>
+                        <p class="text-gray-400 text-sm">${event.description}</p>
+                    </div>
+                </div>
+                <div class="w-5/12"></div>
+            `;
+
+            return div;
+        }
+
+        function setupFilters() {
+            const filterButtons = document.querySelectorAll('#category-filters button');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'glow'));
+                    button.classList.add('active', 'glow');
+                    const category = button.getAttribute('data-category');
+                    filterEvents(category);
+                });
+            });
+        }
+
+        function filterEvents(category) {
+            const events = document.querySelectorAll('#timeline-events > div');
+            
+            let hasVisibleEvents = false;
+            let currentMonth = '';
+            
+            events.forEach(event => {
+                // If it's a month marker
+                if (event.classList.contains('month-marker')) {
+                    const nextSibling = event.nextElementSibling;
+                    // Show month marker if at least one event in this month is visible
+                    let monthHasVisibleEvents = false;
+                    let currentElement = nextSibling;
+                    
+                    while (currentElement && !currentElement.classList.contains('month-marker')) {
+                        if (category === 'all' || currentElement.getAttribute('data-category') === category) {
+                            monthHasVisibleEvents = true;
+                            break;
+                        }
+                        currentElement = currentElement.nextElementSibling;
+                    }
+                    
+                    event.style.display = monthHasVisibleEvents ? '' : 'none';
+                } else {
+                    // Regular event
+                    if (category === 'all' || event.getAttribute('data-category') === category) {
+                        event.style.display = '';
+                        hasVisibleEvents = true;
+                    } else {
+                        event.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Initialize the timeline when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', loadTimeline);
+    </script>
+</body>
+</html>

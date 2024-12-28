@@ -1,0 +1,149 @@
+[
+  {
+    "date": "2024-05-13",
+    "title": "GPT-4o Launch",
+    "category": "model",
+    "description": "OpenAI launches GPT-4o ('o' for 'omni'), integrating text and images in a single model, marking a significant advancement in multimodal AI capabilities.",
+    "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/"
+  },
+  {
+    "date": "2024-07-18",
+    "title": "GPT-4o mini Release",
+    "category": "model",
+    "description": "OpenAI introduces GPT-4o mini, offering improved performance over GPT-3.5 Turbo at a lower cost, with a 128K context window and enhanced multilingual capabilities.",
+    "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
+  },
+  {
+    "date": "2024-09-12",
+    "title": "o1 and o1-mini Release",
+    "category": "model",
+    "description": "OpenAI releases o1 and o1-mini, new large language models trained with reinforcement learning to perform complex reasoning tasks.",
+    "url": "https://openai.com/o1/"
+  },
+  {
+    "date": "2024-12-09",
+    "title": "Sora Video Generation Model",
+    "category": "model",
+    "description": "OpenAI introduces Sora, a video generation model that can create high-quality videos from text prompts.",
+    "url": "https://openai.com/index/sora-is-here/"
+  },
+  {
+    "date": "2024-12-01",
+    "title": "12 Days of OpenAI",
+    "category": "event",
+    "description": "OpenAI launches '12 Days of Shipmas', a daily announcement event featuring new AI features and tools, including the introduction of ChatGPT Pro and Sora video generation model.",
+    "url": "https://openai.com/12-days/"
+  },
+  {
+    "date": "2024-12-20",
+    "title": "o3 and o3-mini Preview",
+    "category": "model",
+    "description": "OpenAI previews o3 and o3-mini models, successors to the o1 series, claiming significant advancements in AI reasoning and interaction, with public launch expected in early 2025.",
+    "url": "https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/"
+  },
+  {
+    "date": "2024-03-04",
+    "title": "Claude 3 Family Release",
+    "category": "model",
+    "description": "Anthropic announces the Claude 3 model family, setting new industry benchmarks across a wide range of cognitive tasks, including Haiku, Sonnet, and Opus variants.",
+    "url": "https://www.anthropic.com/news/claude-3-family"
+  },
+  {
+    "date": "2024-10-22",
+    "title": "Claude 3.5 Haiku and Sonnet Release",
+    "category": "model",
+    "description": "Anthropic releases Claude 3.5 Haiku, its fastest model yet, and an improved version of Claude 3.5 Sonnet, along with a new computer use feature for Sonnet.",
+    "url": "https://www.inc.com/ben-sherry/anthropic-just-released-its-most-advanced-small-ai-model-yet/90992933"
+  },
+  {
+    "date": "2024-01-25",
+    "title": "AI-Powered Cancer Detection System",
+    "category": "application",
+    "description": "FDA approves an AI system for early-stage cancer detection, showing significantly higher accuracy rates than traditional methods.",
+    "url": "https://www.fda.gov/medical-devices"
+  },
+  {
+    "date": "2024-03-20",
+    "title": "AI Traffic Management System",
+    "category": "application",
+    "description": "Singapore implements citywide AI traffic management system, reducing congestion by 30% in pilot areas.",
+    "url": "https://www.smartnation.gov.sg/"
+  },
+  {
+    "date": "2024-04-10",
+    "title": "AI-Enhanced Weather Forecasting",
+    "category": "application",
+    "description": "NOAA deploys new AI-powered weather prediction system, improving forecast accuracy by up to 40% for extreme weather events.",
+    "url": "https://www.noaa.gov/"
+  },
+  {
+    "date": "2024-02-28",
+    "title": "Constitutional AI Framework",
+    "category": "research",
+    "description": "Researchers publish comprehensive framework for implementing ethical constraints in large language models, introducing new methods for value alignment.",
+    "url": "https://arxiv.org/abs/example"
+  },
+  {
+    "date": "2024-04-15",
+    "title": "Neural Architecture Evolution",
+    "category": "research",
+    "description": "Breakthrough paper demonstrates self-evolving neural networks that can automatically optimize their architecture for specific tasks.",
+    "url": "https://arxiv.org/abs/example"
+  },
+  {
+    "date": "2024-05-20",
+    "title": "Quantum-Classical AI Integration",
+    "category": "research",
+    "description": "Research team achieves first successful integration of quantum computing with classical AI models, showing significant speed improvements for specific tasks.",
+    "url": "https://nature.com/example"
+  },
+  {
+    "date": "2024-09-09",
+    "title": "GSA AI Framework",
+    "category": "policy",
+    "description": "General Services Administration finalizes and issues framework for prioritizing critical emerging technologies, including generative AI capabilities, in a secure cloud environment.",
+    "url": "https://www.gao.gov/products/gao-24-107332"
+  },
+  {
+    "date": "2024-08-01",
+    "title": "EU AI Act Enters into Force",
+    "category": "policy",
+    "description": "European Union enacts the AI Act (Regulation (EU) 2024/1689), the first-ever comprehensive legal framework on AI, addressing risks and setting requirements for AI developers and deployers.",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  },
+  {
+    "date": "2024-10-30",
+    "title": "OMB AI Acquisition Policy",
+    "category": "policy",
+    "description": "Office of Management and Budget releases M-24-18, a government-wide policy to advance responsible acquisition of AI by Federal agencies.",
+    "url": "https://www.whitehouse.gov/briefing-room/statements-releases/2024/10/30/fact-sheet-key-ai-accomplishments-in-the-year-since-the-biden-harris-administrations-landmark-executive-order/"
+  },
+  {
+    "date": "2024-02-01",
+    "title": "Major Tech Company Layoffs",
+    "category": "news",
+    "description": "Several major tech companies announce significant layoffs despite AI boom, raising questions about industry direction.",
+    "url": "https://example.com/tech-layoffs"
+  },
+  {
+    "date": "2024-04-02",
+    "title": "AI Alliance Formation",
+    "category": "news",
+    "description": "Leading tech companies form alliance to establish standards for responsible AI development and deployment.",
+    "url": "https://example.com/ai-alliance"
+  },
+  {
+    "date": "2024-05-15",
+    "title": "AI Copyright Lawsuit",
+    "category": "news",
+    "description": "Landmark copyright lawsuit filed against AI companies over training data usage, setting potential precedent for industry.",
+    "url": "https://example.com/ai-lawsuit"
+  },
+  {
+    "date": "2024-12-10",
+    "title": "NeurIPS 2024",
+    "category": "event",
+    "description": "Annual Conference on Neural Information Processing Systems, featuring breakthrough research in machine learning and artificial intelligence.",
+    "url": "https://neurips.cc/"
+  }
+]
