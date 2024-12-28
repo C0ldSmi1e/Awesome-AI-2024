@@ -1,0 +1,83 @@
+name: Add A Milestone
+description: Submit a new AI milestone/event to the timeline
+title: "[Milestone]: "
+labels: ["milestone"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to Awesome AI 2024! Please fill out the information below to add a new milestone.
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: When did this milestone occur?
+      placeholder: "YYYY-MM-DD (e.g., 2024-07-18)"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A clear, concise title for the milestone
+      placeholder: "GPT-4o mini Release"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the most appropriate category for this milestone
+      options:
+        - model (AI Models & Releases)
+        - application (Applications & Products)
+        - system (Systems & Platforms)
+        - event (Conferences & Events)
+        - policy (Regulations & Policies)
+        - research (Research Breakthroughs)
+        - corporate (Corporate News)
+        - other (specify in description)
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the milestone
+      placeholder: "OpenAI introduces GPT-4o mini, offering improved performance over GPT-3.5 Turbo at a lower cost, with a 128K context window and enhanced multilingual capabilities."
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to official announcement, documentation, or reliable source
+      placeholder: "https://example.com/announcement"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any additional context, alternative categories, or other relevant information
+      placeholder: "If you selected 'other' as category, please specify the suggested category here. You can also provide any additional context or notes."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Guidelines
+      description: By submitting this milestone, you confirm that
+      options:
+        - label: The information provided is accurate and from a reliable source
+          required: true
+        - label: The milestone occurred in 2024
+          required: true
+        - label: This is not a duplicate entry
+          required: true
